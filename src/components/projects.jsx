@@ -46,7 +46,7 @@ const Projects = () => {
                     [<div key={`project${ind}`} class="flip-card">
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
-                               <h1>{project.title}</h1>
+                               <h6>{project.title}</h6>
                             </div>
                             <div class="flip-card-back">
                                 {/* <i data-bs-toggle="modal" data-bs-target={`#exampleModal${ind}`} class="bi bi-play-circle-fill"></i> */}

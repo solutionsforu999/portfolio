@@ -65,17 +65,19 @@ body {
 }
 
 .flip-card-front {
-    background-color: #bbb;
+    background-color: dodgerblue;
     color: black;
 }
 
-.flip-card-front>h1 {
-    margin: 5rem 0;
-    font-weight: lighter;
+.flip-card-front>h6 {
+    margin: 40% 0;
+    padding: 0 1rem;
+    font-weight: lighter ;
+    font-family: fantasy;
 }
 
 .flip-card-back {
-    background-color: dodgerblue;
+    background-color: #00B2DF;
     color: white;
     transform: rotateY(180deg);
 }
