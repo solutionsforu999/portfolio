@@ -6,6 +6,7 @@ import Home from './components/home';
 import About from './components/about';
 import Projects from './components/projects';
 import { useEffect } from 'react';
+import 'bootstrap-icons/font/bootstrap-icons.css';
 function App() {
   const location=useLocation();
   const navigateTo=useNavigate();
