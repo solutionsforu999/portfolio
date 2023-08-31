@@ -24,27 +24,29 @@ const Home = () => {
             clearInterval(intervalId);
         };
     }, [position]);
-    
+
     return (
         <>
-            <div className='container row'>
-                <div className='desc col-md-6'>
+            <div className='container d-flex justify-content-center flex-wrap'>
+                <div className='desc flex-grow-1'>
                     <h2>Hello, <span>👋🏻</span></h2>
                     <h2 id='myname'>I'm Abdellatif BENCHADA</h2>
                     <h2>{role}</h2>
                     <div>
-                        <img style={{cursor:'pointer'}} src={linkedin} onClick={()=>window.open('https://www.linkedin.com/in/abdellatif-benchada-370085260/')} width='20%' alt={linkedin}/>
+                        <img style={{ cursor: 'pointer' }} src={linkedin} onClick={() => window.open('https://www.linkedin.com/in/abdellatif-benchada-370085260/')} width='20%' alt={linkedin} />
 
                     </div>
                 </div>
-                <div className='homeimage col-md-6'>
+                <div className='homeimage'>
                     <img src={giphy} width='100%' alt='developer gif' />
                 </div>
             </div>
-            <button  className="cta" onClick={() => navigateTo('/about')}>
-                <span className="spanbtx">NEXT{' >'}</span>
-            </button>
-            
+            <div className='d-flex justify-content-center'>
+                <button className="cta" onClick={() => navigateTo('/about')}>
+                    <span className="spanbtx">NEXT{' >'}</span>
+                </button>
+            </div>
+
         </>
     );
 }
