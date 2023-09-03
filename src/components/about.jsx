@@ -6,7 +6,7 @@ const About = () => {
     return (
         <>
             <div className="container aboutme">
-                <div className='aboutmedesc' style={{ width: '90%', padding: '5px' }}>
+                <div className='aboutmedesc' style={{ maxWidth: '90%', padding: '5px' }}>
                     <h3>About Me</h3>
                     <p>
                         I'm a self-taught Front End developer from Morocco. I build websites with a focus on providing the experience for everyone using them and responsiveness. Curious to learn more about developing scalable distribution systems, love problem solving, and care about writing and maintainable code. A responsive design makes your website accessible to all users, regardless of their devices.
@@ -40,7 +40,7 @@ const About = () => {
                     <img src={illustrator} width='100%' alt={illustrator} />
                 </div>
                 <button style={{ margin: '35% 24% 30% 20%' }} className="cta" onClick={() => navigateTo('/projects')}>
-                    <span className="spanbtx">NEXT{' >'}</span>
+                    <span className="spanbtx">NEXT</span>
                 </button>
             </div>
 

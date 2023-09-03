@@ -62,9 +62,9 @@ const Projects = () => {
                 )}
             </Carousel>
 
-            <div className="d-flex justify-content-center my-10">
+            <div className="d-flex justify-content-center pt-5">
                 <button className="cta" onClick={() => navigateTo('/home')}>
-                    <span className="spanbtx">{'< '}BACK</span>
+                    <span className="spanbtx">BACK</span>
                 </button>
             </div>
 

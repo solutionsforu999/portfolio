@@ -41,9 +41,9 @@ const Home = () => {
                     <img src={giphy} width='100%' alt='developer gif' />
                 </div>
             </div>
-            <div className='d-flex justify-content-center'>
+            <div className='d-flex justify-content-center pt-2'>
                 <button className="cta" onClick={() => navigateTo('/about')}>
-                    <span className="spanbtx">NEXT{' >'}</span>
+                    <span className="spanbtx">NEXT</span>
                 </button>
             </div>
 

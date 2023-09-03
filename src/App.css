@@ -259,8 +259,8 @@ button.rec-arrow-left:hover {
 .ctaabout {
     /* display: flex; */
     position: absolute;
-    margin: 0 5%;
-    padding: 11px 33px;
+    margin: 0 1rem;
+    padding: 0.5rem 1rem;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
     font-size: 25px;
@@ -433,6 +433,6 @@ button.rec-arrow-left:hover {
     }
 
     .rec-dot {
-        padding: 25px !important;
+        padding: 0.2rem !important;
     }
 }
