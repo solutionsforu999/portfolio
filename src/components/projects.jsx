@@ -18,11 +18,11 @@ const breakPoints = [
     { width: 1750, itemsToShow: 6 },
 ]
 const Projects = () => {
-    const [readyToplay,setReadyToplay]=useState(false);
+    const [readyToplay, setReadyToplay] = useState(false);
     const videoPlayers = useRef(null);
     const [showModal, setShowModal] = useState(false);
     const [targetModal, settargetModal] = useState(0);
-    const [projects, setProjects] = useState([{title: 'REM Real Estate Project', img: processing,url:'https://youtu.be/3TcRzbhE9Ec'},{title:'paper-scissor-rock game', img: processing,url:'https://youtu.be/e1VFlA8XhQo'},{ title: 'Travel website', img: processing,url:'https://youtu.be/8w-8tzpQBtk'},{ title: 'E-com Local Project', img: processing, url: 'https://youtu.be/45q3H4ZoQA8' },{ title: 'E-com Project', img: processing, url: 'https://youtu.be/wOgjl7r09aA' },{ title: 'MovieDb Project', img: imdb, url: 'https://youtu.be/-lZ7i4oFY6k' }]);
+    const [projects, setProjects] = useState([{ title: 'REM Real Estate Project', img: processing, url: 'https://youtu.be/3TcRzbhE9Ec' }, { title: 'paper-scissor-rock game', img: processing, url: 'https://youtu.be/e1VFlA8XhQo' }, { title: 'Travel website', img: processing, url: 'https://youtu.be/8w-8tzpQBtk' }, { title: 'E-com Local Project', img: processing, url: 'https://youtu.be/45q3H4ZoQA8' }, { title: 'E-com Project', img: processing, url: 'https://youtu.be/wOgjl7r09aA' }, { title: 'MovieDb Project', img: imdb, url: 'https://youtu.be/-lZ7i4oFY6k' }]);
     const navigateTo = useNavigate();
     const carousel = useRef();
     const onPrevStart = (current, next) => {
@@ -46,7 +46,7 @@ const Projects = () => {
                     [<div key={`project${ind}`} class="flip-card">
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
-                               <h6>{project.title}</h6>
+                                <h6>{project.title}</h6>
                             </div>
                             <div class="flip-card-back">
                                 {/* <i data-bs-toggle="modal" data-bs-target={`#exampleModal${ind}`} class="bi bi-play-circle-fill"></i> */}
@@ -62,9 +62,11 @@ const Projects = () => {
                 )}
             </Carousel>
 
-            <button className="cta" onClick={() => navigateTo('/home')}>
-                <span className="spanbtx">{'< '}BACK</span>
-            </button>
+            <div className="d-flex justify-content-center my-10">
+                <button className="cta" onClick={() => navigateTo('/home')}>
+                    <span className="spanbtx">{'< '}BACK</span>
+                </button>
+            </div>
 
             {/* <div class="modal fade " data-bs-theme="dark" id={`exampleModal${ind}`} tabindex="-1" aria-labelledby={`exampleModalLabel${ind}`} aria-hidden="true">
                         <div class="modal-dialog modal-fullscreen">
@@ -85,11 +87,11 @@ const Projects = () => {
                             </div>
                         </div>
                     </div> */}
-            <Modal className="my-modal-projects" fullscreen={true}  show={showModal}>
+            <Modal className="my-modal-projects" fullscreen={true} show={showModal}>
                 <Modal.Body>
-                    {readyToplay===false&&<h4 className="fw-lighter mt-5 text-center overflow-hidden">Wait Please 🔃...</h4>}
+                    {readyToplay === false && <h4 className="fw-lighter mt-5 text-center overflow-hidden">Wait Please 🔃...</h4>}
                     <ReactPlayer
-                        onReady={()=>setReadyToplay(true)}
+                        onReady={() => setReadyToplay(true)}
                         url={projects[targetModal].url} // Replace with your video URL
                         controls // Show video controls
                         width="100%" // Set the video width
@@ -99,7 +101,7 @@ const Projects = () => {
                     {/* {carouselItems[activeIndex]?.modalContent} */}
                 </Modal.Body>
                 <Modal.Footer>
-                    <Button variant="secondary" onClick={() => [setShowModal(false),setReadyToplay(false)]}>
+                    <Button variant="secondary" onClick={() => [setShowModal(false), setReadyToplay(false)]}>
                         Close
                     </Button>
                 </Modal.Footer>
