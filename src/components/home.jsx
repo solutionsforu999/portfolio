@@ -19,7 +19,7 @@ const Home = () => {
                 setRole(`${text}|`);
                 setPosition(0);
             }
-        }, 100);
+        }, 200);
         return () => {
             clearInterval(intervalId);
         };
@@ -29,12 +29,12 @@ const Home = () => {
         <>
             <div className='container d-flex justify-content-center flex-wrap'>
                 <div className='desc flex-grow-1'>
-                    <h2>Hello, <span>👋🏻</span></h2>
-                    <h2 id='myname'>I'm Abdellatif BENCHADA</h2>
-                    <h2>{role}</h2>
+                    <h1>Hello, <span>👋🏻</span></h1>
+                    <h1 id='myname'>I'm Abdellatif BENCHADA</h1>
+                    <h1>{role}</h1>
                     <div>
-                        <img style={{ cursor: 'pointer' }} src={linkedin} onClick={() => window.open('https://www.linkedin.com/in/abdellatif-benchada-370085260/')} width='10%' alt={linkedin} />
-
+                        {/* <img style={{ cursor: 'pointer' }} src={linkedin} onClick={() => window.open('https://www.linkedin.com/in/abdellatif-benchada-370085260/')} width='10%' alt={linkedin} /> */}
+        {/* <div></div> */}
                     </div>
                 </div>
                 <div className='homeimage'>

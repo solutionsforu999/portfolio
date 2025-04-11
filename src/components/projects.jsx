@@ -22,7 +22,12 @@ const Projects = () => {
     const videoPlayers = useRef(null);
     const [showModal, setShowModal] = useState(false);
     const [targetModal, settargetModal] = useState(0);
-    const [projects, setProjects] = useState([{ title: 'REM Real Estate Project', img: processing, url: 'https://youtu.be/3TcRzbhE9Ec' }, { title: 'paper-scissor-rock game', img: processing, url: 'https://youtu.be/e1VFlA8XhQo' }, { title: 'Travel website', img: processing, url: 'https://youtu.be/8w-8tzpQBtk' }, { title: 'E-com Local Project', img: processing, url: 'https://youtu.be/45q3H4ZoQA8' }, { title: 'E-com Project', img: processing, url: 'https://youtu.be/wOgjl7r09aA' }, { title: 'MovieDb Project', img: imdb, url: 'https://youtu.be/-lZ7i4oFY6k' }]);
+    const [projects, setProjects] = useState([
+        { title: 'REM Real Estate Project', img: processing, url: 'https://youtu.be/3TcRzbhE9Ec' }, { title: 'paper-scissor-rock game', img: processing, url: 'https://youtu.be/e1VFlA8XhQo' }
+        , { title: 'Travel website', img: processing, url: 'https://youtu.be/8w-8tzpQBtk' },
+        //  { title: 'E-com Local Project', img: processing, url: 'https://youtu.be/45q3H4ZoQA8' },
+        //   { title: 'E-com Project', img: processing, url: 'https://youtu.be/wOgjl7r09aA' },
+           { title: 'MovieDb Project', img: imdb, url: 'https://youtu.be/-lZ7i4oFY6k' }]);
     const navigateTo = useNavigate();
     const carousel = useRef();
     const onPrevStart = (current, next) => {
